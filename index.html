@@ -7,6 +7,21 @@
 <body>
 
 	<style>
+
+		@supports (-webkit-overflow-scrolling: touch) {
+	  /* CSS specific to iOS devices */
+			.Android {
+				display: none;
+			}
+		}
+
+		@supports not (-webkit-overflow-scrolling: touch) {
+		  /* CSS for other than iOS devices */
+			.iOS {
+				display: none;
+			}
+		}
+
 		body {
 	    	background-color: rgb(255,255,255);
 			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -190,46 +205,55 @@
 
 			<br />
 			<a class="btn full-width" href="http://www.express.com">http://www.express.com</a>-->
-			<h3>Conversant</h3>
 
-			<a class="btn full-width" href="https://cmh-qa-www.express.com/womens-clothing/sale/clearance/cat890004?sort=skuLowPrice&filters=Category:categoryType_uFilter:Tops&AID=13571321&PID=2210202&SID=uuu878ED6FD-F589-40ED-B66F-36A3E9C69796&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=70c796ac09f411e981a304110a24060e">Conversant iOS</a>
+
+			<div class="iOS">
+				<h3>Conversant iOS</h3>
+				<a class="btn full-width" href="https://cmh-qa-www.express.com/womens-clothing/sale/clearance/cat890004?sort=skuLowPrice&filters=Category:categoryType_uFilter:Tops&AID=13571321&PID=2210202&SID=uuu878ED6FD-F589-40ED-B66F-36A3E9C69796&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=70c796ac09f411e981a304110a24060e">Conversant iOS</a>
+			</div>
 			<br />
-			<a class="btn and full-width" href="https://www.express.com/womens-clothing/sale/clearance/cat890004?sort=skuLowPrice&filters=Category:categoryType_uFilter:Tops&AID=13571321&PID=2210202&SID=uuu878ED6FD-F589-40ED-B66F-36A3E9C69796&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=70c796ac09f411e981a304110a24060e">Conversant android</a>
+			<div class="Android">
+				<h3>Conversant Android</h3>
+				<a class="btn and full-width" href="https://www.express.com/womens-clothing/sale/clearance/cat890004?sort=skuLowPrice&filters=Category:categoryType_uFilter:Tops&AID=13571321&PID=2210202&SID=uuu878ED6FD-F589-40ED-B66F-36A3E9C69796&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=70c796ac09f411e981a304110a24060e">Conversant android</a>
+			</div>
 
-            <h3>Omniture</h3>
-            <h4>iOS</h4>
-            <br />
-            <a class="btn full-width" href="https://cmh-qa-www.express.com/mens-clothing/jeans/cat400003?socname=FB:O:R:NAO:CMPN:M:NAO:VS:NAO:OS39&CID=s_O:R:FB:NAO:CMPN:M:NAO:VS:NAO:OS39">From Facebook</a>
+						<div class="iOS">
+							<h3>Omniture iOS</h3>
+            	<br />
+	            <a class="btn full-width" href="https://cmh-qa-www.express.com/mens-clothing/jeans/cat400003?socname=FB:O:R:NAO:CMPN:M:NAO:VS:NAO:OS39&CID=s_O:R:FB:NAO:CMPN:M:NAO:VS:NAO:OS39">From Facebook</a>
 
-            <br />
-            <a class="btn full-width" href="https://cmh-qa-www.express.com/mens-clothing?socname=TW:O:R:NAO:CMPN:M:NAO:SI:NAO:OS405&CID=s_O:R:TW:NAO:CMPN:M:NAO:SI:NAO:OS405">From Twitter</a>
+	            <br />
+	            <a class="btn full-width" href="https://cmh-qa-www.express.com/mens-clothing?socname=TW:O:R:NAO:CMPN:M:NAO:SI:NAO:OS405&CID=s_O:R:TW:NAO:CMPN:M:NAO:SI:NAO:OS405">From Twitter</a>
 
-            <br />
-            <a class="btn full-width" href="https://cmh-qa-www.express.com/womens-clothing/accessories/jewelry/earrings/cat570007?bc_eid=@UJ/5/6OlR0BMsK8V3/BWsnJgFYl2RcS3u2hfL1z5lpI=&ac_cid=20180813_16224_RTL_W_JEWELRY_d_c_s01_1100&ac_bid=1431305365&om_mid=_pdm10152%7CW%7C20180813&om_rid=214000266&om_cid=20180813%7CW%7Cpdm10152">From Email</a>
+	            <br />
+	            <a class="btn full-width" href="https://cmh-qa-www.express.com/womens-clothing/accessories/jewelry/earrings/cat570007?bc_eid=@UJ/5/6OlR0BMsK8V3/BWsnJgFYl2RcS3u2hfL1z5lpI=&ac_cid=20180813_16224_RTL_W_JEWELRY_d_c_s01_1100&ac_bid=1431305365&om_mid=_pdm10152%7CW%7C20180813&om_rid=214000266&om_cid=20180813%7CW%7Cpdm10152">From Email</a>
 
-            <br />
-            <a class="btn full-width" href="https://cmh-qa-www.express.com/?AID=11393884&PID=2210202&SID=uuu67FE9C44-0255-49F7-A674-54741363B474&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=c7f7cad99f3411e8817904c90a240611">From CJ</a>
+	            <br />
+	            <a class="btn full-width" href="https://cmh-qa-www.express.com/?AID=11393884&PID=2210202&SID=uuu67FE9C44-0255-49F7-A674-54741363B474&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=c7f7cad99f3411e8817904c90a240611">From CJ</a>
 
-            <br />
-            <a class="btn full-width" href="https://cmh-qa-www.express.com/clothing/women/super-high-waisted-lace-up-stretch-ankle-jean-leggings/pro/07108167/color/MEDIUM%20WASH?mrkgcl=638&mrkgadid=3274320506&CID=SEM_Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&SearchID=Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&product_id=13950330&adpos=1o11&creative=250069958810&device=c&matchtype=&network=g&gclid=EAIaIQobChMI1LyQwuvq3AIVCKZpCh0EwAA2EAkYCyABEgI9QPD_BwE">From Merkle</a>
+	            <br />
+	            <a class="btn full-width" href="https://cmh-qa-www.express.com/clothing/women/super-high-waisted-lace-up-stretch-ankle-jean-leggings/pro/07108167/color/MEDIUM%20WASH?mrkgcl=638&mrkgadid=3274320506&CID=SEM_Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&SearchID=Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&product_id=13950330&adpos=1o11&creative=250069958810&device=c&matchtype=&network=g&gclid=EAIaIQobChMI1LyQwuvq3AIVCKZpCh0EwAA2EAkYCyABEgI9QPD_BwE">From Merkle</a>
+						</div>
 
-            <h4>Android</h4>
-            <br />
-            <a class="btn full-width" href="https://www.express.com/mens-clothing/jeans/cat400003?socname=FB:O:R:NAO:CMPN:M:NAO:VS:NAO:OS39&CID=s_O:R:FB:NAO:CMPN:M:NAO:VS:NAO:OS39">From Facebook</a>
+						<div class="Android">
+	            <h3>Omniture Android</h3>
+	            <br />
+	            <a class="btn and full-width" href="https://www.express.com/mens-clothing/jeans/cat400003?socname=FB:O:R:NAO:CMPN:M:NAO:VS:NAO:OS39&CID=s_O:R:FB:NAO:CMPN:M:NAO:VS:NAO:OS39">From Facebook</a>
 
-            <br />
-            <a class="btn full-width" href="https://www.express.com/mens-clothing?socname=TW:O:R:NAO:CMPN:M:NAO:SI:NAO:OS405&CID=s_O:R:TW:NAO:CMPN:M:NAO:SI:NAO:OS405">From Twitter</a>
+	            <br />
+	            <a class="btn and full-width" href="https://www.express.com/mens-clothing?socname=TW:O:R:NAO:CMPN:M:NAO:SI:NAO:OS405&CID=s_O:R:TW:NAO:CMPN:M:NAO:SI:NAO:OS405">From Twitter</a>
 
-            <br />
-            <a class="btn full-width" href="https://www.express.com/womens-clothing/accessories/jewelry/earrings/cat570007?bc_eid=@UJ/5/6OlR0BMsK8V3/BWsnJgFYl2RcS3u2hfL1z5lpI=&ac_cid=20180813_16224_RTL_W_JEWELRY_d_c_s01_1100&ac_bid=1431305365&om_mid=_pdm10152%7CW%7C20180813&om_rid=214000266&om_cid=20180813%7CW%7Cpdm10152">From Email</a>
+	            <br />
+	            <a class="btn and full-width" href="https://www.express.com/womens-clothing/accessories/jewelry/earrings/cat570007?bc_eid=@UJ/5/6OlR0BMsK8V3/BWsnJgFYl2RcS3u2hfL1z5lpI=&ac_cid=20180813_16224_RTL_W_JEWELRY_d_c_s01_1100&ac_bid=1431305365&om_mid=_pdm10152%7CW%7C20180813&om_rid=214000266&om_cid=20180813%7CW%7Cpdm10152">From Email</a>
 
-            <br />
-            <a class="btn full-width" href="https://www.express.com/?AID=11393884&PID=2210202&SID=uuu67FE9C44-0255-49F7-A674-54741363B474&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=c7f7cad99f3411e8817904c90a240611">From CJ</a>
+	            <br />
+	            <a class="btn and full-width" href="https://www.express.com/?AID=11393884&PID=2210202&SID=uuu67FE9C44-0255-49F7-A674-54741363B474&CID=550&pubname=WhaleShark+Media%3A+RetailMeNot.com&pubID=2210202&cjevent=c7f7cad99f3411e8817904c90a240611">From CJ</a>
 
-            <br />
-            <a class="btn full-width" href="https://www.express.com/clothing/women/super-high-waisted-lace-up-stretch-ankle-jean-leggings/pro/07108167/color/MEDIUM%20WASH?mrkgcl=638&mrkgadid=3274320506&CID=SEM_Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&SearchID=Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&product_id=13950330&adpos=1o11&creative=250069958810&device=c&matchtype=&network=g&gclid=EAIaIQobChMI1LyQwuvq3AIVCKZpCh0EwAA2EAkYCyABEgI9QPD_BwE">From Merkle</a>
+	            <br />
+	            <a class="btn and full-width" href="https://www.express.com/clothing/women/super-high-waisted-lace-up-stretch-ankle-jean-leggings/pro/07108167/color/MEDIUM%20WASH?mrkgcl=638&mrkgadid=3274320506&CID=SEM_Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&SearchID=Goo-PLA-F-Main-Retail-00-000-All-US-Brand-NA&product_id=13950330&adpos=1o11&creative=250069958810&device=c&matchtype=&network=g&gclid=EAIaIQobChMI1LyQwuvq3AIVCKZpCh0EwAA2EAkYCyABEgI9QPD_BwE">From Merkle</a>
+						</div>
 
-
+			<div class="iOS">
 			<h3>Deeplinks iOS</h3>
 			<br />
 			<a class="btn full-width" href="https://cmh-qa-www.express.com/">www.express.com/</a>
@@ -330,8 +354,10 @@
 
 			<br />
 			<a class="btn full-width" href="https://cmh-qa-www.express.com/blog/">Blog</a>
+			</div>
 
 
+			<div class="Android">
 			<h3>Deeplinks Android</h3>
 
 			<br />
@@ -433,6 +459,7 @@
 
 			<br />
 			<a class="btn and full-width" href="https://www.express.com/blog/">Blog</a>
+			</div>
 
 		</div>
 	</div>
